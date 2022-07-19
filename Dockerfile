@@ -1,5 +1,5 @@
 FROM ubuntu
-MAINTAINER tabrezid54
+MAINTAINER tabrezid54_myself
 RUN apt-get -y update
 RUN apt-get install -y apache2 \
   zip\
