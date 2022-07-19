@@ -7,6 +7,7 @@ RUN apt-get install -y apache2 \
 ADD https://www.free-css.com/assets/files/free-css-templates/download/page269/complex.zip
 WORKDIR /var/www/html
 RUN unzip complex.zip
+RUN cp -rvf complex/* .
 RUN rm -rf complex.zip
 ENTRYPOINT apachectl -D FOREGROUND
 EXPOSE 80
