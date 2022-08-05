@@ -6,8 +6,8 @@ metadata:
     role: myrole
 spec:
   containers:
-    - name: web
-      image: nginx
+    - name: cloudage
+      image: tabrezid54/cloudjob
+      imagePullPolicy: Always
       ports:
-        - name: web
-          containerPort: 80
+      - containerPort: 80
