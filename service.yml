@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  name: cloudjob
+  labels:
+    app: cloudjob
+spec:
+  selector:
+    app: cloudjob
+  type: LoadBalancer
+  ports:
+    - port: 8080
+      targetPort: 80
+      nodePort: 31200
